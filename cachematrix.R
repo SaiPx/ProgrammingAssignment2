@@ -1,9 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
+## There are 2 functions the makeCacheMatrix and the cacheSolve
+## The makeCacheMatrix will stash the computed values "once" in a Lexical scoped
+## variable and will dole it out whenever called subsequently
 
 ## The makeCacheMatrix is a generic function that can cache large
 ## previously computed values. This is possible by the "<<-"
-## operator and the scope of the variable in the parent Environment
+## operator and the Lexical scope of the variable in the parent Environment
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
